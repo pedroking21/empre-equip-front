@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro de Empréstimo</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2 id="tituloEmprestimo">Cadastro de Empréstimo</h2>
+
+    <div class="botoes-topo">
+      <button class="btn-voltar" id="btnVoltar">Voltar</button>
+    </div>
+
+    <form id="formEmprestimo">
+      <div class="form-group">
+        <label for="idUsuario">Usuário:</label>
+        <select id="idUsuario" name="idUsuario" required>
+          <option value="">Selecione</option>
+          <!-- options via JS -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="idEquipamento">Equipamento:</label>
+        <select id="idEquipamento" name="idEquipamento" required>
+          <option value="">Selecione</option>
+          <!-- options via JS -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="dataEmprestimo">Data do Empréstimo:</label>
+        <input type="date" id="dataEmprestimo" name="dataEmprestimo" required />
+      </div>
+
+      <div class="form-group">
+        <label for="dataPrevistaDevolucao">Data Prevista de Devolução:</label>
+        <input type="date" id="dataPrevistaDevolucao" name="dataPrevistaDevolucao" required />
+      </div>
+
+      <div class="form-group">
+        <label for="dataRealDevolucao">Data Real de Devolução:</label>
+        <input type="date" id="dataRealDevolucao" name="dataRealDevolucao" />
+      </div>
+
+      <div class="form-group">
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+          <option value="">Selecione</option>
+          <option value="ativo">Ativo</option>
+          <option value="concluido">Concluído</option>
+          <option value="atrasado">Atrasado</option>
+        </select>
+      </div>
+
+      <div class="botoes-formulario">
+        <button type="submit" class="btn-novo" id="btnSalvar">Salvar</button>
+        <button type="button" class="btn-voltar" id="btnLimpar">Limpar</button>
+        <button type="button" class="btn-voltar hidden" id="btnCancelar">Cancelar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="emprestimoCadastro.js"></script>
+</body>
+</html>

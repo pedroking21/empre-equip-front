@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2 id="tituloUsuario">Cadastro de Usuário</h2>
+
+    <div class="botoes-topo">
+      <button class="btn-voltar" id="btnVoltar">Voltar</button>
+    </div>
+
+    <form id="formUsuario">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="tipoUsuario">Tipo de Usuário:</label>
+        <select id="tipoUsuario" name="tipoUsuario" required>
+          <option value="">Selecione</option>
+          <option value="aluno">Aluno</option>
+          <option value="professor">Professor</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="contato">Contato:</label>
+        <input type="text" id="contato" name="contato" required>
+      </div>
+
+      <div class="botoes-formulario">
+        <button type="submit" class="btn-novo" id="btnSalvar">Salvar</button>
+        <button type="button" class="btn-voltar" id="btnLimpar">Limpar</button>
+        <button type="button" class="btn-voltar hidden" id="btnCancelar">Cancelar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="usuarioCadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Empréstimos</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Empréstimos</h2>
+
+    <div class="botoes-topo">
+      <button class="btn-voltar" id="btnVoltar">Voltar</button>
+      <button class="btn-novo" id="btnNovo">Novo Empréstimo</button>
+    </div>
+
+    <table id="emprestimosTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Usuário</th>
+          <th>Equipamento</th>
+          <th>Data Empréstimo</th>
+          <th>Prevista Devolução</th>
+          <th>Real Devolução</th>
+          <th>Status</th>
+          <th>Situação</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody><!-- preenchido via JS --></tbody>
+    </table>
+  </div>
+
+  <script src="emprestimoListar.js"></script>
+</body>
+</html>

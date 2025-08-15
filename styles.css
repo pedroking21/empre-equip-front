@@ -1,0 +1,256 @@
+/* Layout geral */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Botões do topo */
+.botoes-topo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Botões personalizados */
+button {
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.btn-voltar {
+  background-color: #6c757d;
+}
+
+.btn-voltar:hover {
+  background-color: #5a6268;
+}
+
+.btn-novo {
+  background-color: #007BFF;
+}
+
+.btn-novo:hover {
+  background-color: #0056b3;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+td button {
+  padding: 6px 10px;
+  font-size: 13px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+/* Linha de ações com flex e gap */
+td.acoes {
+  display: flex;
+  gap: 8px;
+}
+
+/* Botões de ação padronizados */
+.btn-acao {
+  min-width: 110px;
+  padding: 8px 12px;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Cores */
+.btn-editar { background-color: #28a745; }
+.btn-editar:hover { background-color: #218838; }
+
+.btn-excluir { background-color: #dc3545; }
+.btn-excluir:hover { background-color: #c82333; }
+
+
+/* Formulário */
+form {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* Botões do formulário */
+.botoes-formulario {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15% auto;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.modal-botoes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Título da tela inicial */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Botão da tela inicial */
+.container > button {
+  display: block;
+  margin: 0 auto;
+  background-color: #007BFF;
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+}
+
+.container > button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo do menu principal */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+ul li {
+  margin: 15px 0;
+}
+
+ul li a {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+ul li a:hover {
+  background-color: #0056b3;
+}
+
+/* Centralizar título h2 */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Ajustar a lista do menu */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 200px; /* largura máxima para centralizar os botões */
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+/* Estilizar os botões do menu */
+ul li a {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+ul li a:hover {
+  background-color: #0056b3;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.badge-ok { background: #e8f5e9; color: #2e7d32; }   /* Não está atrasado */
+.badge-err { background: #ffebee; color: #c62828; }  /* Está atrasado */
+
