@@ -1,4 +1,5 @@
-const API_URL = "https://empre-equip-front-cgagmupog-pedroking21s-projects.vercel.app";
+//const API_URL = "http://localhost:3000";
+const API_URL = "https://emp-equipe-didatico-aula.onrender.com";
 
 document.addEventListener("DOMContentLoaded", () => {
   const tbody = document.querySelector("#usuariosTable tbody");
