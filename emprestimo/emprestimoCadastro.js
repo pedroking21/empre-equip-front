@@ -1,6 +1,6 @@
 "use strict";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "empre-equip-front-git-main-pedroking21s-projects.vercel.app";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const params = new URLSearchParams(window.location.search);
