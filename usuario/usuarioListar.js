@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "https://empre-equip-front-cgagmupog-pedroking21s-projects.vercel.app";
 
 document.addEventListener("DOMContentLoaded", () => {
   const tbody = document.querySelector("#usuariosTable tbody");
